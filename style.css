@@ -1,0 +1,75 @@
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+    background-color: darkslateblue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 16px;
+    background-color: darkslateblue;
+}
+
+.book-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+    border-left: 5px solid #f4c542;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#add-button {
+    background-color: #4CAF50;
+    /* green */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    margin: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#add-button:hover {
+    background-color: #45a049;
+    /* darker green */
+    transform: scale(1.05);
+    /* small grow on hover */
+}
+
+#add-button:active {
+    transform: scale(0.98);
+    /* slight press-down effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.styling-card-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.card-buttons {
+    background-color: #4CAF50;
+    /* green */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
