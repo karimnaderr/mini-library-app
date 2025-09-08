@@ -31,15 +31,18 @@ bookForm.addEventListener("submit", (e) => {
     bookDialog.close();
   });
 
-function Book(title, author, pages, read, id){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.id = id || crypto.randomUUID();
-    this.info = function(){
-        console.log(this.title , this.author, this.pages, this.read);
+class Book{
+    constructor(title, author, pages, read, id){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+        this.id = id || crypto.randomUUID();
     }
+        info(){
+            console.log(this.title , this.author, this.pages, this.read);
+        }
+    
 }
 
 
